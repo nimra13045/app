@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Generator</title>
+    <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="formsection">
+
+        <h2>Enter Your Details:</h2>
+
+        <label for="name">Full Name:</label>
+        <input type="text" placeholder="Enter your name" id="name">
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter your email" id="email">
+
+        <label for="number">Phone:</label>
+        <input type="number" placeholder="Enter your number" id="phone">
+
+        <label for="address">Address:</label>
+        <textarea placeholder="Enter your address" id="address"></textarea>
+
+        <label for="skill">Skills:</label>
+        <input type="text" placeholder="Enter your skills" id="skill">
+
+        <label for="experience">Experience:</label>
+        <textarea placeholder="Enter your experience" id="experience"></textarea>
+
+        <label for="education">Education:</label>
+        <textarea placeholder="Enter your education" id="education"></textarea>
+
+        <label for="img">Uploadfile</label>
+        <input type="file"id="photo"accept="image/*">
+
+
+
+        <button id="generateCV">Generate CV</button>
+        <button id="reset">Reset From</button>
+    </div>
+
+    <div class="cvsection">
+        <h2>CV Preview</h2>
+        <p id="fillfrom">Fill The From To Your CV Here</p>
+        <div class="cvimg" id="cvimg">
+        
+        </div>
+    </div>
+
+</div>
+
+<script src="cv.js"></script>
+</body>
+</html>

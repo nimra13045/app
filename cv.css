@@ -1,0 +1,89 @@
+  body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 20px;
+    }
+    .formsection, .cvsection {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        flex: 1;
+        min-width: 300px;
+    }
+    .cv{
+        border:2px solid red ;
+        background-color: #218838;
+    }
+    h2 {
+        margin-top: 0;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button {
+        background: #28a745;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #218838;
+    }
+
+.cvimg img {
+       width: 200px;
+    border-radius: 8px;
+    position: absolute;
+    top: 104px;
+    right: 47px;
+    border: 1px solid chocolate;
+}
+.savebutton{
+      background:  #a73728;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .cvsection, .cvsection * {
+        visibility: visible;
+    }
+    .cvsection {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 100%;
+    }
+}
+#reset{
+      background-color:  #a73728;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    width: 121px;
+}
+#reset:hover{
+    background-color:#b14331 ;
+}
